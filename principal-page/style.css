@@ -52,7 +52,10 @@ header {
     top: 50px;
 }
 .desc h2 {
-    font-size: xx-large;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-size:50px ;
+    font-style: normal;
 }
 .target {
     display: flex;
@@ -63,28 +66,37 @@ header {
     height: fit-content;
     width: fit-content;
     margin: 40px;
+}
+.target img{
+    width: 300px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: size .1s ease;
+    transition: width .2s ease, box-shadow .2s ease;
 }
-.target h1 {
+
+
+.target img:hover {
+    width: 350px;
+    box-shadow: 9px 10px 70px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 70px 0px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 70px 0px rgba(0,0,0,0.75);
+}
+.coins {
     display: inline-block;
+    position: absolute;
     display: flex;
-    border: 2px solid black;
-    height: 200px;
-    width: 200px;
-    justify-content: center;
+    width: 100px;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: right;
     align-items: center;
-    background-color: aquamarine;
+    margin-top: 10px;
+    right: 250px;
 }
-.target p {
+.coins img {
+    width: 55px;
+}
+.coins p {
     display: flex;
-    margin: 0;
-    font-size: 20px;
-    border: 2px solid black;
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-}
-.target:hover {
-    
+    font-size: 25px;
+    font-weight: bold;
 }
